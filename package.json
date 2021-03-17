@@ -1,0 +1,25 @@
+{
+  "name": "ch12-employeemanagesys",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ngkent75/ch12-employeemanagesys.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ngkent75/ch12-employeemanagesys/issues"
+  },
+  "homepage": "https://github.com/ngkent75/ch12-employeemanagesys#readme",
+  "dependencies": {
+    "inquirer": "^8.0.0",
+    "mysql": "^2.18.1"
+  }
+}
