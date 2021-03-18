@@ -10,7 +10,7 @@
 
 ## Description
 
-This project is a command-line operated employee management system. The user can add a department, role, or an emloyee, along with relevant data. The information gets added to the database, and the user can then view a table of all the departments, roles, or employees and relevant information. The user has the option to update the role of an employee as well.
+This project is a command-line operated employee management system. The user can add a department, role, or an employee, along with relevant data. The information gets added to the database, and the user can then view a table of all the departments, roles, or employees and relevant information. The user has the option to update the role of an employee as well.
 
 ```
 As a business owner
