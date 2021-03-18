@@ -18,6 +18,8 @@ CREATE TABLE role(
   salary NUMERIC(12,2) NOT NULL,
   department_id INT,
   PRIMARY KEY (id)
+  FOREIGN KEY (department_id)
+  REFERENCES department(id)
 );
 
 /* employee */
@@ -29,9 +31,55 @@ CREATE TABLE employee(
   role_id INT,
   manager_id INT,
   PRIMARY KEY (id),
-  /* [CONSTRAINT]
+  
   FOREIGN KEY (role_id)
   REFERENCES role(id)
-  [ON DELETE SET NULL]
-  [ON UPDATE CASCADE] */
+
+  FOREIGN KEY (manager_id)
+  REFERENCES employee(id)
 );
+
+-- seeds
+
+-- department
+
+INSERT INTO department (name)
+VALUES ('Engineering'),
+('Shipping'),
+('Inventory');
+
+-- role
+
+INSERT INTO role (title, salary, department_id)
+VALUES ('Principal Engineer', '200000', '1'),
+('Sr Engineer', '150000', '1'),
+('Engineer II', '100000', '1'),
+('Engineer I', '70000', '1'),
+
+('Shipping Manager', '100000', '2'),
+('Shipping Clerk', '40000', '2'),
+('Shipping Forklift Operator', '30000', '2'),
+
+('Inventory Manager', '100000', '3'),
+('Inventory QA', '50000', '3'),
+('Inventory Reconciliation', '50000', '3');
+
+-- employee
+
+INSERT INTO employee (first_name, last_name, role_id, manager_id)
+VALUES ('Abdur', 'Baxter', '1', null),
+('Arooj', 'Bannister', '2', '1'),
+('Aniqa', 'Finney', '3', '2'),
+('Reon', 'Cline', '4', '3'),
+
+('Jorden', 'Millar', '5', null),
+('Shabaz', 'Lim', '6', '5'),
+('Chad', 'Connolly', '7', '6'),
+
+('Cecelia', 'Watts', '8', null),
+('Aleena', 'Sinclair', '9', '8'),
+('Benn', 'Britt', '10', '9');
+
+
+
+
