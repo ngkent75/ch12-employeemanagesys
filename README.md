@@ -10,7 +10,7 @@
 
 ## Description
 
-This project is a command-line operated employee management. The user can add a department, role, or an emloyee, along with relevant data. The information gets added to the database, and the user can then view a table of all the departments, roles, or employees and relevant information. The user has the option to update the role of an employee as well.
+This project is a command-line operated employee management system. The user can add a department, role, or an emloyee, along with relevant data. The information gets added to the database, and the user can then view a table of all the departments, roles, or employees and relevant information. The user has the option to update the role of an employee as well.
 
 ```
 As a business owner
@@ -44,31 +44,21 @@ Markdown documentation: https://guides.github.com/features/mastering-markdown/#s
 
 Inquirer documentation: https://www.npmjs.com/package/inquirer
 
-Licensing information: https://choosealicense.com/
-
-License badges: https://gist.github.com/lukas-h/2a5d00690736b4c3a7ba
+console.table documentation: https://www.npmjs.com/package/console.table
 
 Recording software: https://www.screencastify.com/
 
+MySQL: https://www.mysql.com/
+
 ## Criteria
 
-```md
-GIVEN a command-line application that accepts user input
-WHEN I am prompted for information about my application repository
-THEN a high-quality, professional README.md is generated with the title of my project and sections entitled Description, Table of Contents, Installation, Usage, License, Contributing, Tests, and Questions
-WHEN I enter my project title
-THEN this is displayed as the title of the README
-WHEN I enter a description, installation instructions, usage information, contribution guidelines, and test instructions
-THEN this information is added to the sections of the README entitled Description, Installation, Usage, Contributing, and Tests
-WHEN I choose a license for my application from a list of options
-THEN a badge for that license is added near the top of the README and a notice is added to the section of the README entitled License that explains which license the application is covered under
-WHEN I enter my GitHub username
-THEN this is added to the section of the README entitled Questions, with a link to my GitHub profile
-WHEN I enter my email address
-THEN this is added to the section of the README entitled Questions, with instructions on how to reach me with additional questions
-WHEN I click on the links in the Table of Contents
-THEN I am taken to the corresponding section of the README
-```
+* The command-line application should allow users to:
+
+  * Add departments, roles, employees
+
+  * View departments, roles, employees
+
+  * Update employee roles
 
 
 ## Questions
