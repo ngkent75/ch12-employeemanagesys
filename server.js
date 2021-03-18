@@ -1,7 +1,6 @@
 // Establish requires
 const mysql = require('mysql');
 const inquirer = require('inquirer');
-const { restoreDefaultPrompts } = require('inquirer');
 require('console.table');
 
 // Create connection information for the sql database
@@ -12,11 +11,6 @@ const connection = mysql.createConnection({
   password: '',
   database: 'employeeDB'
 });
-
-// Variables/arrays
-// const employeeArr = [];
-// const departmentArr = [];
-// const roleArr = [];
 
 // Function that starts prompt and asks for the user's first action
 const init = () => {
@@ -122,7 +116,6 @@ const updateRole = () => {
             })
           }
         ])
-        // TODO: Update role of employee
         .then((answer) => {
           connection.query(
             'UPDATE employee SET ? WHERE ?',
@@ -193,7 +186,6 @@ const addRole = () => {
           })
         }
       ])
-      // TODO: Add role
       .then((answer) => {
         connection.query(
           'INSERT INTO role SET ?',
@@ -212,8 +204,6 @@ const addRole = () => {
       });
   })
 };
-
-
 
 // Function that adds an employee in a prompt
 const addEmployee = () => {
@@ -251,7 +241,6 @@ const addEmployee = () => {
             })
           }
         ])
-        // TODO: Add employee. Make the manager optional
         .then((answer) => {
           connection.query(
             'INSERT INTO employee SET ?',
